@@ -13,11 +13,14 @@ y = 0
 
 tela = pygame.display.set_mode((largura, altura))
 pygame.display.set_caption('Banana')
+# Codigos novos
 relogio = pygame.time.Clock()
 
 while True:
+    # Codigos novos
     relogio.tick(60)
     tela.fill((0,0,0))
+
     for event in pygame.event.get():
         if event.type == QUIT:
             pygame.quit()
